@@ -22,6 +22,7 @@
   - [Node](#node)
   - [MariaDB](#mariadb)
 - [🪄 Configuraciones Avanzadas](#-configuraciones-avanzadas)
+  - [Configurar Xdebug en Visual Studio Code](#configurar-xdebug-en-visual-studio-code)
   - [Cómo Desactivar Xdebug](#cómo-desactivar-xdebug)
   - [Ejemplo de uso Symfony](#-ejemplo-de-uso-symfony)
 - [:question: FAQs](#question-faqs)
@@ -96,6 +97,8 @@ docker compose exec -T mariadb.local mysql -uroot -proot -e "CREATE DATABASE db"
 ---
 
 ## 🪄 Configuraciones Avanzadas
+### Configurar Xdebug en Visual Studio Code
+Ejecuta los pasos indicados en [acceseo/xdebug-config-for-vscode](https://github.com/acceseo/xdebug-config-for-vscode)
 ### Cómo desactivar Xdebug
 * **CLI**
 ```shell
