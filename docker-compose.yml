@@ -23,7 +23,7 @@ services:
     depends_on:
       - php.local
   php.local:
-    image: acceseo/php-fpm:8.3
+    image: acceseo/php-fpm:8.4
     volumes:
       - .:/app
     # environment:
