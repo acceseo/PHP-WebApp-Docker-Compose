@@ -47,8 +47,8 @@ docker compose up -d
 ```
 #### 🟢 Servicios disponibles
 * Servidor web
-  * http://localhost:80
-  * http://localhost:443
+  * http://localhost (:80)
+  * https://localhost (:443)
 * Base de datos
   * localhost:3306
 * Servidor de correo

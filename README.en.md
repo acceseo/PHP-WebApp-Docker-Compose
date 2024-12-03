@@ -47,8 +47,8 @@ docker compose up -d
 ```
 #### 🟢 Available services
 * Web server
-  * http://localhost:80
-  * http://localhost:443
+  * http://localhost (:80)
+  * https://localhost (:443)
 * Database
   * localhost:3306
 * Mail server
