@@ -1,4 +1,4 @@
-#v2024.06.06
+#v2024.12.04
 services:
   mariadb.local:
     image: mariadb:10.5.8
@@ -29,7 +29,7 @@ services:
     # environment:
       # - TZ=Europe/Madrid
       # - PHP_APP_DIRECTORY=/app
-      # - PHP_MEMORY_LIMIT=128M
+      # - PHP_MEMORY_LIMIT=256M
       # - PHP_MAX_EXECUTION_TIME=600
       # - PHP_MAX_INPUT_TIME=600
       # - XDEBUG_MODE=off
