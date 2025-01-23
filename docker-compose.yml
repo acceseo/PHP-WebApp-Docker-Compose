@@ -1,7 +1,7 @@
-#v2024.12.04
+#v2025.01.23
 services:
   mariadb.local:
-    image: mariadb:10.5.8
+    image: mariadb:10.5.25
     environment:
       - MYSQL_ROOT_PASSWORD=root
       - TZ=Europe/Madrid
