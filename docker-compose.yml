@@ -1,4 +1,4 @@
-#v2025.01.23
+#v2025.01.30
 services:
   mariadb.local:
     image: mariadb:10.5.25
@@ -7,6 +7,10 @@ services:
       - TZ=Europe/Madrid
     ports:
       - 3306:3306
+    healthcheck:
+      test: [ "CMD", "healthcheck.sh", "--connect", "--innodb_initialized" ]
+      interval: 5s
+      retries: 5
   httpd.local:
     image: acceseo/httpd
     # environment:
@@ -36,7 +40,8 @@ services:
     extra_hosts:
       - host.docker.internal:host-gateway
     depends_on:
-      - mariadb.local
+      mariadb.local:
+        condition: service_healthy
     user: www-data
   mailpit.local:
     image: axllent/mailpit:v1.18.5

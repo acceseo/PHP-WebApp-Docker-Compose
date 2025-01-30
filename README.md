@@ -129,6 +129,8 @@ httpd.local:
 ## :question: FAQs
 - **¿Por qué usamos `profiles` para el contenedor de Node?**
 Para evitar que el contenedor de Node se cree cada vez que ejecutas `docker compose up`.
+- **¿Cómo comprobamos que el contenedor de MariaDB está listo para recibir conexiones?**
+Para evitar errores antes de que acepte el contenedor acepte conexiones está configurado el [*healthcheck* sugerido](https://mariadb.com/kb/en/using-healthcheck-sh/) en la documentación oficial.
 
 ## 📄 Licencia
 Este proyecto está bajo la [Licencia MIT](LICENSE).
