@@ -1,4 +1,4 @@
-#v2025.01.30
+#v2026.03.10
 services:
   mariadb.local:
     image: mariadb:10.5.25
@@ -48,7 +48,7 @@ services:
     ports:
       - 8025:8025
   node.local:
-    image: node:20
+    image: node:24
     working_dir: /app
     user: node
     volumes:
