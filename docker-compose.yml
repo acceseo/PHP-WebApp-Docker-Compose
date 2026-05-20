@@ -1,4 +1,4 @@
-#v2026.03.10
+#v2026.05.20
 services:
   mariadb.local:
     image: mariadb:10.5.25
@@ -27,7 +27,7 @@ services:
     depends_on:
       - php.local
   php.local:
-    image: acceseo/php-fpm:8.4
+    image: acceseo/php-fpm:8.5
     volumes:
       - .:/app
     # environment:

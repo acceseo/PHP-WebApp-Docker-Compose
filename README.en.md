@@ -107,7 +107,7 @@ docker compose exec -e XDEBUG_MODE=off php.local my-script.php
 * **Web**
 ```yaml
   php.local:
-    image: acceseo/php-fpm:8.3
+    image: acceseo/php-fpm:8.5
     volumes:
       - .:/app
     environment:
