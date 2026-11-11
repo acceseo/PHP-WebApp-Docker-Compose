@@ -48,7 +48,7 @@ services:
     ports:
       - 8025:8025
   node.local:
-    image: node:24
+    image: node:26
     working_dir: /app
     user: node
     volumes:
