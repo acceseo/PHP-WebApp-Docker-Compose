@@ -1,4 +1,4 @@
-#v2026.05.20
+#v2026.11.11
 services:
   mariadb.local:
     image: mariadb:10.5.25
